@@ -8,12 +8,70 @@
 
 /* Begin PBXBuildFile section */
 		DE061AF022250FE4004DBF26 /* SignalProtocolSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = DE061AEE22250FE4004DBF26 /* SignalProtocolSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE061B1922251048004DBF26 /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061AF722251047004DBF26 /* KeyPair.swift */; };
+		DE061B1A22251048004DBF26 /* DecryptionCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061AF822251047004DBF26 /* DecryptionCallback.swift */; };
+		DE061B1B22251048004DBF26 /* SignalSenderKeyName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061AF922251047004DBF26 /* SignalSenderKeyName.swift */; };
+		DE061B1C22251048004DBF26 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061AFA22251047004DBF26 /* DataExtensions.swift */; };
+		DE061B1D22251048004DBF26 /* SignalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061AFB22251047004DBF26 /* SignalError.swift */; };
+		DE061B1E22251048004DBF26 /* SignalAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061AFC22251047004DBF26 /* SignalAddress.swift */; };
+		DE061B1F22251048004DBF26 /* Fingerprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061AFD22251047004DBF26 /* Fingerprint.swift */; };
+		DE061B2022251048004DBF26 /* CiphertextMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061AFE22251047004DBF26 /* CiphertextMessage.swift */; };
+		DE061B2222251048004DBF26 /* SignalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B0222251047004DBF26 /* SignalStore.swift */; };
+		DE061B2322251048004DBF26 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B0322251047004DBF26 /* SessionStore.swift */; };
+		DE061B2422251048004DBF26 /* PreKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B0422251047004DBF26 /* PreKeyStore.swift */; };
+		DE061B2522251048004DBF26 /* SenderKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B0522251047004DBF26 /* SenderKeyStore.swift */; };
+		DE061B2622251048004DBF26 /* SignedPreKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B0622251047004DBF26 /* SignedPreKeyStore.swift */; };
+		DE061B2722251048004DBF26 /* IdentityKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B0722251047004DBF26 /* IdentityKeyStore.swift */; };
+		DE061B2822251048004DBF26 /* IdentityKeyStoreWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B0922251047004DBF26 /* IdentityKeyStoreWrapper.swift */; };
+		DE061B2922251048004DBF26 /* KeyStoreWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B0A22251047004DBF26 /* KeyStoreWrapper.swift */; };
+		DE061B2A22251048004DBF26 /* SessionStoreWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B0B22251047004DBF26 /* SessionStoreWrapper.swift */; };
+		DE061B2B22251048004DBF26 /* SignedPreKeyStoreWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B0C22251047004DBF26 /* SignedPreKeyStoreWrapper.swift */; };
+		DE061B2C22251048004DBF26 /* PreKeyStoreWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B0D22251047004DBF26 /* PreKeyStoreWrapper.swift */; };
+		DE061B2D22251048004DBF26 /* SenderKeyStoreWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B0E22251047004DBF26 /* SenderKeyStoreWrapper.swift */; };
+		DE061B2E22251048004DBF26 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B1022251047004DBF26 /* Signal.swift */; };
+		DE061B2F22251048004DBF26 /* GroupSessionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B1222251047004DBF26 /* GroupSessionBuilder.swift */; };
+		DE061B3022251048004DBF26 /* SessionPreKeyBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B1322251047004DBF26 /* SessionPreKeyBundle.swift */; };
+		DE061B3122251048004DBF26 /* SessionSignedPreKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B1422251047004DBF26 /* SessionSignedPreKey.swift */; };
+		DE061B3222251048004DBF26 /* SessionCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B1522251047004DBF26 /* SessionCipher.swift */; };
+		DE061B3322251048004DBF26 /* SessionPreKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B1622251047004DBF26 /* SessionPreKey.swift */; };
+		DE061B3422251048004DBF26 /* SessionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B1722251047004DBF26 /* SessionBuilder.swift */; };
+		DE061B3522251048004DBF26 /* GroupCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B1822251047004DBF26 /* GroupCipher.swift */; };
+		DEFAF76622252C3C00B91326 /* SignalProtocolC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFAF76522252C3C00B91326 /* SignalProtocolC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE061AEB22250FE4004DBF26 /* SignalProtocolSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignalProtocolSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE061AEE22250FE4004DBF26 /* SignalProtocolSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalProtocolSwift.h; sourceTree = "<group>"; };
 		DE061AEF22250FE4004DBF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE061AF722251047004DBF26 /* KeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
+		DE061AF822251047004DBF26 /* DecryptionCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecryptionCallback.swift; sourceTree = "<group>"; };
+		DE061AF922251047004DBF26 /* SignalSenderKeyName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalSenderKeyName.swift; sourceTree = "<group>"; };
+		DE061AFA22251047004DBF26 /* DataExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		DE061AFB22251047004DBF26 /* SignalError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalError.swift; sourceTree = "<group>"; };
+		DE061AFC22251047004DBF26 /* SignalAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalAddress.swift; sourceTree = "<group>"; };
+		DE061AFD22251047004DBF26 /* Fingerprint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fingerprint.swift; sourceTree = "<group>"; };
+		DE061AFE22251047004DBF26 /* CiphertextMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiphertextMessage.swift; sourceTree = "<group>"; };
+		DE061B0222251047004DBF26 /* SignalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalStore.swift; sourceTree = "<group>"; };
+		DE061B0322251047004DBF26 /* SessionStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		DE061B0422251047004DBF26 /* PreKeyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreKeyStore.swift; sourceTree = "<group>"; };
+		DE061B0522251047004DBF26 /* SenderKeyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderKeyStore.swift; sourceTree = "<group>"; };
+		DE061B0622251047004DBF26 /* SignedPreKeyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedPreKeyStore.swift; sourceTree = "<group>"; };
+		DE061B0722251047004DBF26 /* IdentityKeyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentityKeyStore.swift; sourceTree = "<group>"; };
+		DE061B0922251047004DBF26 /* IdentityKeyStoreWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentityKeyStoreWrapper.swift; sourceTree = "<group>"; };
+		DE061B0A22251047004DBF26 /* KeyStoreWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyStoreWrapper.swift; sourceTree = "<group>"; };
+		DE061B0B22251047004DBF26 /* SessionStoreWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionStoreWrapper.swift; sourceTree = "<group>"; };
+		DE061B0C22251047004DBF26 /* SignedPreKeyStoreWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedPreKeyStoreWrapper.swift; sourceTree = "<group>"; };
+		DE061B0D22251047004DBF26 /* PreKeyStoreWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreKeyStoreWrapper.swift; sourceTree = "<group>"; };
+		DE061B0E22251047004DBF26 /* SenderKeyStoreWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderKeyStoreWrapper.swift; sourceTree = "<group>"; };
+		DE061B1022251047004DBF26 /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		DE061B1222251047004DBF26 /* GroupSessionBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupSessionBuilder.swift; sourceTree = "<group>"; };
+		DE061B1322251047004DBF26 /* SessionPreKeyBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionPreKeyBundle.swift; sourceTree = "<group>"; };
+		DE061B1422251047004DBF26 /* SessionSignedPreKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionSignedPreKey.swift; sourceTree = "<group>"; };
+		DE061B1522251047004DBF26 /* SessionCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionCipher.swift; sourceTree = "<group>"; };
+		DE061B1622251047004DBF26 /* SessionPreKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionPreKey.swift; sourceTree = "<group>"; };
+		DE061B1722251047004DBF26 /* SessionBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionBuilder.swift; sourceTree = "<group>"; };
+		DE061B1822251047004DBF26 /* GroupCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCipher.swift; sourceTree = "<group>"; };
+		DEFAF76522252C3C00B91326 /* SignalProtocolC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SignalProtocolC.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEFAF76622252C3C00B91326 /* SignalProtocolC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -31,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				DE061AED22250FE4004DBF26 /* SignalProtocolSwift */,
+				DEFAF76422252C3C00B91326 /* SignalProtocolC */,
 				DE061AEC22250FE4004DBF26 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,10 +106,86 @@
 		DE061AED22250FE4004DBF26 /* SignalProtocolSwift */ = {
 			isa = PBXGroup;
 			children = (
+				DE061AF622251047004DBF26 /* Misc */,
+				DE061B1122251047004DBF26 /* Sessions */,
+				DE061B0F22251047004DBF26 /* Setup */,
+				DE061B0122251047004DBF26 /* Stores */,
+				DE061B0822251047004DBF26 /* StoreWrappers */,
 				DE061AEE22250FE4004DBF26 /* SignalProtocolSwift.h */,
 				DE061AEF22250FE4004DBF26 /* Info.plist */,
 			);
 			path = SignalProtocolSwift;
+			sourceTree = "<group>";
+		};
+		DE061AF622251047004DBF26 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				DE061AF722251047004DBF26 /* KeyPair.swift */,
+				DE061AF822251047004DBF26 /* DecryptionCallback.swift */,
+				DE061AF922251047004DBF26 /* SignalSenderKeyName.swift */,
+				DE061AFA22251047004DBF26 /* DataExtensions.swift */,
+				DE061AFB22251047004DBF26 /* SignalError.swift */,
+				DE061AFC22251047004DBF26 /* SignalAddress.swift */,
+				DE061AFD22251047004DBF26 /* Fingerprint.swift */,
+				DE061AFE22251047004DBF26 /* CiphertextMessage.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		DE061B0122251047004DBF26 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				DE061B0222251047004DBF26 /* SignalStore.swift */,
+				DE061B0322251047004DBF26 /* SessionStore.swift */,
+				DE061B0422251047004DBF26 /* PreKeyStore.swift */,
+				DE061B0522251047004DBF26 /* SenderKeyStore.swift */,
+				DE061B0622251047004DBF26 /* SignedPreKeyStore.swift */,
+				DE061B0722251047004DBF26 /* IdentityKeyStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		DE061B0822251047004DBF26 /* StoreWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				DE061B0922251047004DBF26 /* IdentityKeyStoreWrapper.swift */,
+				DE061B0A22251047004DBF26 /* KeyStoreWrapper.swift */,
+				DE061B0B22251047004DBF26 /* SessionStoreWrapper.swift */,
+				DE061B0C22251047004DBF26 /* SignedPreKeyStoreWrapper.swift */,
+				DE061B0D22251047004DBF26 /* PreKeyStoreWrapper.swift */,
+				DE061B0E22251047004DBF26 /* SenderKeyStoreWrapper.swift */,
+			);
+			path = StoreWrappers;
+			sourceTree = "<group>";
+		};
+		DE061B0F22251047004DBF26 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				DE061B1022251047004DBF26 /* Signal.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		DE061B1122251047004DBF26 /* Sessions */ = {
+			isa = PBXGroup;
+			children = (
+				DE061B1222251047004DBF26 /* GroupSessionBuilder.swift */,
+				DE061B1322251047004DBF26 /* SessionPreKeyBundle.swift */,
+				DE061B1422251047004DBF26 /* SessionSignedPreKey.swift */,
+				DE061B1522251047004DBF26 /* SessionCipher.swift */,
+				DE061B1622251047004DBF26 /* SessionPreKey.swift */,
+				DE061B1722251047004DBF26 /* SessionBuilder.swift */,
+				DE061B1822251047004DBF26 /* GroupCipher.swift */,
+			);
+			path = Sessions;
+			sourceTree = "<group>";
+		};
+		DEFAF76422252C3C00B91326 /* SignalProtocolC */ = {
+			isa = PBXGroup;
+			children = (
+				DEFAF76522252C3C00B91326 /* SignalProtocolC.framework */,
+			);
+			path = SignalProtocolC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +266,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE061B1E22251048004DBF26 /* SignalAddress.swift in Sources */,
+				DE061B2E22251048004DBF26 /* Signal.swift in Sources */,
+				DE061B3122251048004DBF26 /* SessionSignedPreKey.swift in Sources */,
+				DE061B2F22251048004DBF26 /* GroupSessionBuilder.swift in Sources */,
+				DE061B1922251048004DBF26 /* KeyPair.swift in Sources */,
+				DE061B1F22251048004DBF26 /* Fingerprint.swift in Sources */,
+				DE061B1C22251048004DBF26 /* DataExtensions.swift in Sources */,
+				DE061B3222251048004DBF26 /* SessionCipher.swift in Sources */,
+				DE061B3522251048004DBF26 /* GroupCipher.swift in Sources */,
+				DE061B3422251048004DBF26 /* SessionBuilder.swift in Sources */,
+				DE061B1D22251048004DBF26 /* SignalError.swift in Sources */,
+				DE061B2C22251048004DBF26 /* PreKeyStoreWrapper.swift in Sources */,
+				DE061B2B22251048004DBF26 /* SignedPreKeyStoreWrapper.swift in Sources */,
+				DE061B1A22251048004DBF26 /* DecryptionCallback.swift in Sources */,
+				DE061B2522251048004DBF26 /* SenderKeyStore.swift in Sources */,
+				DE061B2922251048004DBF26 /* KeyStoreWrapper.swift in Sources */,
+				DE061B3022251048004DBF26 /* SessionPreKeyBundle.swift in Sources */,
+				DE061B2422251048004DBF26 /* PreKeyStore.swift in Sources */,
+				DE061B2622251048004DBF26 /* SignedPreKeyStore.swift in Sources */,
+				DE061B2822251048004DBF26 /* IdentityKeyStoreWrapper.swift in Sources */,
+				DE061B2322251048004DBF26 /* SessionStore.swift in Sources */,
+				DE061B2A22251048004DBF26 /* SessionStoreWrapper.swift in Sources */,
+				DE061B1B22251048004DBF26 /* SignalSenderKeyName.swift in Sources */,
+				DE061B2722251048004DBF26 /* IdentityKeyStore.swift in Sources */,
+				DE061B3322251048004DBF26 /* SessionPreKey.swift in Sources */,
+				DE061B2222251048004DBF26 /* SignalStore.swift in Sources */,
+				DE061B2D22251048004DBF26 /* SenderKeyStoreWrapper.swift in Sources */,
+				DE061B2022251048004DBF26 /* CiphertextMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,13 +432,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SignalProtocolSwift/SignalProtocolC",
+					"$(PROJECT_DIR)/SignalProtocolC",
+				);
 				INFOPLIST_FILE = SignalProtocolSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = SKS.SignalProtocolSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -293,13 +464,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SignalProtocolSwift/SignalProtocolC",
+					"$(PROJECT_DIR)/SignalProtocolC",
+				);
 				INFOPLIST_FILE = SignalProtocolSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = SKS.SignalProtocolSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
