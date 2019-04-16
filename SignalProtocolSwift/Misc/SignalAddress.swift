@@ -82,9 +82,9 @@ extension SignalAddress: Equatable {
 
 extension SignalAddress: Hashable {
 
-    /// A hash of the address
-    public var hashValue: Int {
-        return name.hashValue &+ deviceId.hashValue
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(name)
+        hasher.combine(deviceId)
     }
 }
 

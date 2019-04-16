@@ -90,10 +90,9 @@ extension SignalSenderKeyName: Equatable {
 }
 
 extension SignalSenderKeyName: Hashable {
-
-    /// The hash of the sender key name
-    public var hashValue: Int {
-        return groupId.hashValue &+ sender.hashValue
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(groupId)
+        hasher.combine(sender)
     }
-
 }
