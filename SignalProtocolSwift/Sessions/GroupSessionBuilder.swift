@@ -26,7 +26,7 @@ import SignalProtocolC
 public final class GroupSessionBuilder {
 
     /// The key store in which the group sessions are stored
-    let store: SignalStore
+    public let store: SignalStore
 
     /**
      Constructs a group session builder.

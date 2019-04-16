@@ -21,7 +21,7 @@ public final class SignalStore {
     private let instanceId: UnsafeMutablePointer<Int>
 
     /// The store context pointer of the instance
-    let storeContext: OpaquePointer
+    public let storeContext: OpaquePointer
 
     /// The delegate that handles the identity key store operations
     public let identityKeyStore: IdentityKeyStore
