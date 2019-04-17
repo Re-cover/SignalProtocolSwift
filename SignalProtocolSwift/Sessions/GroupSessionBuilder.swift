@@ -26,7 +26,7 @@ import SignalProtocolC
 public final class GroupSessionBuilder {
 
     /// The key store in which the group sessions are stored
-    public let store: SignalStore
+    let store: SignalStore
 
     /**
      Constructs a group session builder.
@@ -148,5 +148,28 @@ public final class GroupSessionBuilder {
         // Convert to data
         let mess = Data(signalBuffer: serialized)
         return CiphertextMessage(type: .distribution, message: mess)
+    }
+    
+    public func getDistributionId(for localAddress: SignalSenderKeyName) throws -> Int32 {
+        
+        // Create group builder
+        var builder: OpaquePointer? = nil
+        var result = withUnsafeMutablePointer(to: &builder) {
+            group_session_builder_create($0, store.storeContext, Signal.context)
+        }
+        guard result == 0 else { throw SignalError(value: result) }
+        defer { group_session_builder_free(builder) }
+        
+        // get message
+        var message: OpaquePointer? = nil
+        result = withUnsafeMutablePointer(to: &message) {
+            get_sender_key_distribution_message(builder, $0, localAddress.pointer)
+        }
+        guard result == 0 else { throw SignalError(value: result) }
+        defer { sender_key_distribution_message_destroy(message) }
+        
+        let id = sender_key_distribution_message_get_id(message)
+        
+        return Int32(id)
     }
 }
