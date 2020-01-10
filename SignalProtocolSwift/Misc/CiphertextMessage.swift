@@ -91,7 +91,7 @@ public struct CiphertextMessage {
      - parameter data: The serialized message, containing the message type at the first byte.
      */
     public init(from data: Data) {
-        guard data.count > 0 else {
+        guard data.count > 1 else {
             self.type = .unknown
             self.message = Data()
             return
