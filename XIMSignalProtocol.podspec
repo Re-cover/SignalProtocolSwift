@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "XIMSignalProtocol"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "SignalProtocol for XIM in Swift"
   s.homepage     = "https://github.com/Re-cover/SignalProtocolSwift"
   s.license      = "MIT"
