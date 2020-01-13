@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SignalProtocolC",
+        "repositoryURL": "https://github.com/Re-cover/SignalProtocolC.git",
+        "state": {
+          "branch": null,
+          "revision": "18bc4e01340a47e5e65d9175bc93c2c119f774d2",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
