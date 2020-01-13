@@ -63,7 +63,7 @@ public final class SignalAddress {
         // namePointer.deallocate(capacity: name.utf8.count)
         // TODO
         // signalAddress.deallocate()
-        address.deallocate(capacity: 1)
+        address.deallocate()
     }
 }
 

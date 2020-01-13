@@ -71,7 +71,7 @@ public final class SignalSenderKeyName {
         // groupPointer.deallocate(capacity: groupId.utf8.count)
         // TODO
         // signalAddress.deallocate()
-        address.deallocate(capacity: 1)
+        address.deallocate()
     }
 }
 
