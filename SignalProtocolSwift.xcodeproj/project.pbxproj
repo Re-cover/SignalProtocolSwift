@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		858B7B867548E1D9048F66E1 /* Pods_SignalProtocolSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2DAB5E847627E9C9A0279D /* Pods_SignalProtocolSwift.framework */; };
 		DE061AF022250FE4004DBF26 /* SignalProtocolSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = DE061AEE22250FE4004DBF26 /* SignalProtocolSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE061B1922251048004DBF26 /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061AF722251047004DBF26 /* KeyPair.swift */; };
 		DE061B1A22251048004DBF26 /* DecryptionCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061AF822251047004DBF26 /* DecryptionCallback.swift */; };
@@ -36,10 +37,11 @@
 		DE061B3322251048004DBF26 /* SessionPreKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B1622251047004DBF26 /* SessionPreKey.swift */; };
 		DE061B3422251048004DBF26 /* SessionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B1722251047004DBF26 /* SessionBuilder.swift */; };
 		DE061B3522251048004DBF26 /* GroupCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE061B1822251047004DBF26 /* GroupCipher.swift */; };
-		DEFAF76622252C3C00B91326 /* SignalProtocolC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFAF76522252C3C00B91326 /* SignalProtocolC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F2DAB5E847627E9C9A0279D /* Pods_SignalProtocolSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignalProtocolSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		528F271441ED8687F8604574 /* Pods-SignalProtocolSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalProtocolSwift.release.xcconfig"; path = "Target Support Files/Pods-SignalProtocolSwift/Pods-SignalProtocolSwift.release.xcconfig"; sourceTree = "<group>"; };
 		DE061AEB22250FE4004DBF26 /* SignalProtocolSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SignalProtocolSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE061AEE22250FE4004DBF26 /* SignalProtocolSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalProtocolSwift.h; sourceTree = "<group>"; };
 		DE061AEF22250FE4004DBF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +73,7 @@
 		DE061B1622251047004DBF26 /* SessionPreKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionPreKey.swift; sourceTree = "<group>"; };
 		DE061B1722251047004DBF26 /* SessionBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionBuilder.swift; sourceTree = "<group>"; };
 		DE061B1822251047004DBF26 /* GroupCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCipher.swift; sourceTree = "<group>"; };
-		DEFAF76522252C3C00B91326 /* SignalProtocolC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SignalProtocolC.framework; sourceTree = "<group>"; };
+		E564A053BA0F6792EC1A421A /* Pods-SignalProtocolSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalProtocolSwift.debug.xcconfig"; path = "Target Support Files/Pods-SignalProtocolSwift/Pods-SignalProtocolSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,19 +81,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEFAF76622252C3C00B91326 /* SignalProtocolC.framework in Frameworks */,
+				858B7B867548E1D9048F66E1 /* Pods_SignalProtocolSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67E8019D9187C387E2CB2624 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F2DAB5E847627E9C9A0279D /* Pods_SignalProtocolSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DE061AE122250FE4004DBF26 = {
 			isa = PBXGroup;
 			children = (
 				DE061AED22250FE4004DBF26 /* SignalProtocolSwift */,
-				DEFAF76422252C3C00B91326 /* SignalProtocolC */,
 				DE061AEC22250FE4004DBF26 /* Products */,
+				FCF41F8386F6DFE0B42DFE86 /* Pods */,
+				67E8019D9187C387E2CB2624 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,12 +191,13 @@
 			path = Sessions;
 			sourceTree = "<group>";
 		};
-		DEFAF76422252C3C00B91326 /* SignalProtocolC */ = {
+		FCF41F8386F6DFE0B42DFE86 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DEFAF76522252C3C00B91326 /* SignalProtocolC.framework */,
+				E564A053BA0F6792EC1A421A /* Pods-SignalProtocolSwift.debug.xcconfig */,
+				528F271441ED8687F8604574 /* Pods-SignalProtocolSwift.release.xcconfig */,
 			);
-			path = SignalProtocolC;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +218,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE061AF322250FE4004DBF26 /* Build configuration list for PBXNativeTarget "SignalProtocolSwift" */;
 			buildPhases = (
+				A47310D0983DA044CD842B76 /* [CP] Check Pods Manifest.lock */,
 				DE061AE622250FE4004DBF26 /* Headers */,
 				DE061AE722250FE4004DBF26 /* Sources */,
 				DE061AE822250FE4004DBF26 /* Frameworks */,
@@ -261,6 +274,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A47310D0983DA044CD842B76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SignalProtocolSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE061AE722250FE4004DBF26 /* Sources */ = {
@@ -425,6 +463,7 @@
 		};
 		DE061AF422250FE4004DBF26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E564A053BA0F6792EC1A421A /* Pods-SignalProtocolSwift.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -457,6 +496,7 @@
 		};
 		DE061AF522250FE4004DBF26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 528F271441ED8687F8604574 /* Pods-SignalProtocolSwift.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;

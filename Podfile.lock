@@ -1,0 +1,16 @@
+PODS:
+  - SignalProtocolC_XIM (2.3.3)
+
+DEPENDENCIES:
+  - SignalProtocolC_XIM
+
+SPEC REPOS:
+  https://gitlab.sachsen.cc/labs/privatespecs.git:
+    - SignalProtocolC_XIM
+
+SPEC CHECKSUMS:
+  SignalProtocolC_XIM: 559c516deca32fd3c4a7a9762181afd5af6e04d7
+
+PODFILE CHECKSUM: 33c2abb5ac869af8fa40a00cf108b00b338a1fa8
+
+COCOAPODS: 1.9.1
